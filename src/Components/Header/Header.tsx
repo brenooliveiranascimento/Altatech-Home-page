@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import { FiSearch, FiShoppingCart } from 'react-icons/fi';
+import { FiSearch, FiShoppingCart, FiMenu } from 'react-icons/fi';
 import altaLogo from '../../images/Altatech_ALTA_icon.svg';
 
 function Header() {
@@ -36,11 +36,14 @@ function Header() {
           }}
           className="general_top"
         >
-          <span>Wathsap</span>
+          <span className="wathsap">Wathsap</span>
           <FiSearch className="top_icon" />
           <FiShoppingCart className="top_icon" />
         </section>
-        <nav className="services">
+        <section style={{
+          display: 'flex', justifyContent: 'space-between',
+        }}
+        >
           <section className="logo_area">
             <img
               src={altaLogo}
@@ -51,16 +54,33 @@ function Header() {
               <p>Soluções em Tecnologica</p>
             </article>
           </section>
-          <span>Produtos</span>
-          <span>Serviços</span>
-          <span>Locação</span>
-          <span>Cloud</span>
-          <button
-            type="button"
-          >
-            Entrar
-          </button>
-        </nav>
+          <nav className="services">
+            <section className="service_items">
+              <span>Produtos</span>
+              <span>Serviços</span>
+              <span>Locação</span>
+              <span>Cloud</span>
+              <button
+                style={{
+                  widows: 30,
+                }}
+                type="button"
+                className="buttonMenu"
+              >
+                <FiMenu
+                  className="menu"
+                />
+              </button>
+              <button
+                type="button"
+                className="button_entrar"
+              >
+                Entrar
+              </button>
+            </section>
+          </nav>
+        </section>
+
       </section>
     </header>
   );

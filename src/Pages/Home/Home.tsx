@@ -9,6 +9,9 @@ export default function Home() {
     <section className="home_container">
       <Header />
       <Hero />
+      <Hero />
+      <Hero />
+      <Hero />
     </section>
   );
 }
