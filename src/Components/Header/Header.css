@@ -1,0 +1,181 @@
+.header_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  transition: all 0.5s;
+  color: white;
+  font-family: poppins;
+  font-weight: 400;
+}
+
+.limit_content {
+  transition: all 0.5s;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.top_icon {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.top_icon:nth-child(2) {
+  margin-left: 3rem;
+}
+
+.top_icon:hover {
+  color: #aaa
+}
+
+.general_top span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.general_top {
+  width: 100%;
+  display: flex;
+  height: auto;
+  transition: all 0.5s;
+  font-size: 23px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.services span {
+  transition: all 0.5s;
+  margin: 3rem 0rem 3rem 1rem;
+  cursor: pointer;
+}
+
+.services span:hover {
+  color: #aaa;
+}
+
+.services button {
+  width: 100px;
+  height: 40px;
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.services button:hover {
+  background-color: black;
+  color: white;
+}
+
+.logo_area {
+  display: flex;
+  margin-top: -4rem;
+}
+
+.logo_area img {
+  width: 65px;
+  margin-top: 1.3rem;
+}
+
+.logo_area article {
+  flex-direction: column;
+  width: 180px;
+}
+
+.logo_area article p {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.logo_area article p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.logo_area article p:nth-child(2) {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -2.2rem;
+  line-height: 20px;
+  color: #ddd;
+}
+
+@media screen and (max-width: 712px) {
+
+  .general_top {
+    position: absolute;
+    top: 0px;
+    right: 2rem;
+  }
+
+  .general_top span {
+    display: none;
+  }
+
+  .limit_content {
+    width: 80%;
+    display: flex;
+  }
+
+  .services span {
+    display: none;
+  }
+
+  .services button {
+    position: absolute;
+    right: 2rem;
+    margin-top: 2rem;
+  }
+
+  .logo_area {
+    width: 150px;
+    margin-top: -0rem;
+    position: absolute;
+    left: 2rem;
+  }
+
+  .logo_area img {
+    width: 45px;
+  }
+
+  .logo_area article p:nth-child(1) {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  
+  .logo_area article p:nth-child(2) {
+  margin-top: -26px;
+  font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 312px) {
+  .logo_area {
+    flex-direction: column;
+    height: 150px;
+  }
+
+  .logo_area img {
+    width: 20px;
+    margin-top: 35px;
+  }
+
+  .logo_area article {
+    margin-top: -25px;
+  }
+}

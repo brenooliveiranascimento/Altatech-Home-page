@@ -1,0 +1,23 @@
+.hero_container {
+  height: 95vh;
+  width: 100%;
+  background: url("../../images//altatech.jpg") center;
+  background-size: cover;
+  z-index: 0;
+  color: white;
+}
+
+.hero_brightness {
+  width: 100%;
+  height: 95vh;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.hero_inf {
+  
+}
