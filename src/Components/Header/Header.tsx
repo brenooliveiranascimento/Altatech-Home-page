@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import { FiSearch, FiShoppingCart } from 'react-icons/fi';
 import altaLogo from '../../images/Altatech_ALTA_icon.svg';
 
 function Header() {
@@ -18,14 +19,26 @@ function Header() {
   return (
     <header
       style={{
-        backgroundColor: scroll > 125 ? '#1c203e' : 'rgba(0,0,0,0.0)',
+        backgroundColor: scroll > 125 ? 'rgba(28, 32, 62,0.8)' : 'rgba(0,0,0,0.0)',
       }}
       className="header_container"
     >
-      <section className="limit_content">
-        <section className="general_top">
-          <span>Buscar</span>
-          <span>Carrinho</span>
+      <section
+        style={{
+          height: scroll > 125 ? '7rem' : '10rem',
+        }}
+        className="limit_content"
+      >
+        <section
+          style={{
+            marginBottom: scroll > 125 ? -30 : 0,
+            marginTop: 20,
+          }}
+          className="general_top"
+        >
+          <span>Wathsap</span>
+          <FiSearch className="top_icon" />
+          <FiShoppingCart className="top_icon" />
         </section>
         <nav className="services">
           <section className="logo_area">
@@ -35,7 +48,7 @@ function Header() {
             />
             <article>
               <p>Altatech</p>
-              <p>Altatech Soluções Tecnologicas</p>
+              <p>Soluções em Tecnologica</p>
             </article>
           </section>
           <span>Produtos</span>
