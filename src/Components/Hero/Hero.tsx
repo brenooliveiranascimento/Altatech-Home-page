@@ -1,4 +1,6 @@
 import React from 'react';
+import { FiArrowRight } from 'react-icons/fi';
+import HeroFooter from '../HeroFooter/HeroFooter';
 import NeedButton from '../NeedButton/NeedButton';
 import './Hero.css';
 
@@ -13,16 +15,7 @@ function Hero() {
             </h1>
             <span>Sobre nos</span>
           </article>
-          <footer className="hero_footer">
-            <section className="news_tetter_area">
-              <p className="news_latter">Receba nossa newsletter</p>
-              <input
-                placeholder="E-Mail"
-                className="email_news_latter"
-              />
-            </section>
-            <NeedButton />
-          </footer>
+          <HeroFooter />
         </section>
       </section>
     </section>
