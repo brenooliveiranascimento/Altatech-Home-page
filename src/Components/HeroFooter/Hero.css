@@ -100,9 +100,3 @@
   justify-content: center;
   font-size: 2rem;
 }
-
-@media screen and (max-width: 1120px) {
-  .hero_inf {
-    width: 80%;
-  }
-}
