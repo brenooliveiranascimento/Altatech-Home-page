@@ -1,5 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
 import React, { useState } from 'react';
 import './card.css';
 
@@ -7,16 +7,24 @@ function ServicesCard({ service }: any) {
   const [showDetails, setShowDetails] = useState(false);
   return (
     <section
-      onMouseEnter={() => setShowDetails(service.name)}
       className="card_container"
     >
-      <p className="name">{service.name}</p>
-
+      <button
+        type="button"
+        className="name"
+      >
+        <p
+          onClick={() => setShowDetails(!showDetails)}
+        >
+          {service.name}
+        </p>
+      </button>
       {
-        showDetails === service.name && (
+        showDetails && (
           <section className="details_area">
             <p className="description">{service.description}</p>
             <button
+              onClick={() => alert('dnwp')}
               className="solicitar"
               type="button"
             >

@@ -14,7 +14,13 @@ function Hero() {
             <span>Sobre nos</span>
           </article>
           <footer className="hero_footer">
-            <h1>footer</h1>
+            <section className="news_tetter_area">
+              <p className="news_latter">Receba nossa newsletter</p>
+              <input
+                placeholder="E-Mail"
+                className="email_news_latter"
+              />
+            </section>
             <NeedButton />
           </footer>
         </section>
