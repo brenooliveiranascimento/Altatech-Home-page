@@ -45,6 +45,10 @@
   margin-top: -15px;
   font-family: poppins;
   line-height: 1.4rem;
+  width: 80%;
+  margin-left: 2rem;
+  align-self: center;
+  justify-self: center;
 }
 
 .inf_area button {
@@ -92,14 +96,18 @@
     display: none;
   }
 
+  .cloud_inf p {
+    font-size: 14px;
+  }
+
   .beckups_brightness {
     width: 100%;
     height: 50rem;
   }
   .beckups_brightness span {
-    margin-left: 2rem;
+    margin-left: 0.01rem;
     font-size: 1.4rem;
-    width: 300px;
+    width: 250px;
     margin-bottom: -10rem;
     text-align: center;
   }
@@ -122,11 +130,13 @@
     margin-bottom: 0rem;
     align-self: center;
     justify-self: center;
-    margin-left: 3rem;
+    margin-left: 6rem;
+    width: 120px;
   }
 
   .inf_area p {
-    font-size: 20px;
+    font-size: 16px;
+    align-self: center;
     text-align: center;
   }
 

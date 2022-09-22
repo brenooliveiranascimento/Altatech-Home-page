@@ -1,12 +1,20 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './NeedButton.css';
 import ServicesCard from './ServicesCard/ServicesCard';
 
 function NeedButton() {
   const [showServices, setShowServices] = useState(false);
+  const [widthMachine, setWidthMachine] = useState(0);
+
+  const verifyScroll = () => setInterval(() => setWidthMachine(window.length), 100);
+
+  useEffect(() => {
+    verifyScroll();
+    return () => clearInterval(verifyScroll());
+  }, []);
 
   const services = [
     { name: 'Privacidade LGPD', description: 'Entenda como a Altatech trabalha em conformidade com a Lei Geral de Proteção de Dados' },

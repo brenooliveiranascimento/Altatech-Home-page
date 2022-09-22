@@ -163,56 +163,6 @@
   }
 }
 
-/* @media screen and (max-width: 712px) {
-
-  .general_top {
-    position: absolute;
-    top: 0px;
-    right: 2rem;
-  }
-
-  .general_top span {
-    display: none;
-  }
-
-  .limit_content {
-    width: 80%;
-    display: flex;
-  }
-
-  .services span {
-    display: none;
-  }
-
-  .services button {
-    position: absolute;
-    right: 2rem;
-    margin-top: 2rem;
-  }
-
-  .logo_area {
-    width: 150px;
-    margin-top: -0rem;
-    position: absolute;
-    left: 2rem;
-  }
-
-  .logo_area img {
-    width: 45px;
-  }
-
-  .logo_area article p:nth-child(1) {
-    font-size: 20px;
-    margin-top: 30px;
-  }
-  
-  .logo_area article p:nth-child(2) {
-  margin-top: -26px;
-  font-size: 15px;
-  }
-}
-} */
-
 @media screen and (max-width: 469px) {
   .logo_area {
     flex-direction: column;
