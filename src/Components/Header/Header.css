@@ -76,13 +76,14 @@
   font-weight: 800;
 }
 
-.services button:hover {
+.button_entrar:hover {
   background-color: black;
   color: white;
 }
 
 .buttonMenu {
   display: none;
+  cursor: pointer;
 }
 
 .logo_area {
