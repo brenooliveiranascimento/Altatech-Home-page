@@ -7,5 +7,6 @@
 @media screen and (max-width: 1120px) {
   .services_inf_container {
     flex-direction: column;
+    margin-top: -10rem;
   }
 }
