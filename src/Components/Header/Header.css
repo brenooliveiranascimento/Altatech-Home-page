@@ -1,0 +1,38 @@
+.header_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  transition: all 0.5s;
+  color: white;
+}
+
+.limit_content {
+  max-width: 1720px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.general_top {
+  width: 100%;
+  display: flex;
+  height: auto;
+  padding-top: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.services {
+  display: flex;
+}
+
+.services span {
+  margin: 2rem 0rem 3rem 3rem
+}

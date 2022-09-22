@@ -5,7 +5,11 @@ function Hero() {
   return (
     <section className="hero_container">
       <section className="hero_brightness">
-        <h1>Herossss</h1>
+        <article className="hero_inf">
+          <h1>
+            Altatech
+          </h1>
+        </article>
       </section>
     </section>
   );

@@ -1,0 +1,9 @@
+.services_container {
+  width: 100%;
+  min-height: 20rem;
+  margin-top: -10rem;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
