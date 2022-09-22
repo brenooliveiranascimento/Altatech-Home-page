@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
+import altaLogo from '../../images/Altatech_ALTA_icon.svg';
 
 function Header() {
   const [scroll, setScroll] = useState(0);
@@ -27,11 +28,25 @@ function Header() {
           <span>Carrinho</span>
         </section>
         <nav className="services">
+          <section className="logo_area">
+            <img
+              src={altaLogo}
+              alt="altatech logo"
+            />
+            <article>
+              <p>Altatech</p>
+              <p>Altatech Soluções Tecnologicas</p>
+            </article>
+          </section>
           <span>Produtos</span>
           <span>Serviços</span>
           <span>Locação</span>
           <span>Cloud</span>
-          <span>Entrar</span>
+          <button
+            type="button"
+          >
+            Entrar
+          </button>
         </nav>
       </section>
     </header>
