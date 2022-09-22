@@ -1,0 +1,143 @@
+.beckups_area {
+  width: 43.3rem;
+  background: url("../../../images/Cloud.jpeg") center;
+  background-size: cover;
+  display: flex;
+  height: 45rem;
+  z-index: 1;
+}
+
+.beckups_brightness {
+  width: 43.3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 45rem;
+  background-color: rgba(28, 32, 62,0.9);
+  z-index: 0;
+}
+
+.beckups_brightness span {
+  color: white;
+  font-size: 2rem;
+  width: 500px;
+  font-weight: 600;
+  font-family: poppins;
+  line-height: 2rem;
+  text-align: start;
+  margin-left: -4rem;
+}
+
+.beckups_brightness p {
+  color: white;
+  width: 350px;
+}
+
+.inf_area {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.inf_area p {
+  margin-top: -15px;
+  font-family: poppins;
+  line-height: 1.4rem;
+  width: 80%;
+  margin-left: 2rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.inf_area button {
+  width: 250px;
+  background-color: #5198C7;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 2rem;
+}
+
+.inf_area button:hover {
+  background-color: #0382C3;
+}
+
+.cloud_inf {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  height: 45rem;
+}
+
+.cloud_inf h1 {
+  color: #1c203e;
+  font-size: 2.5rem;
+  font-family: poppins;
+  font-weight: 600;
+}
+
+.cloud_inf p {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1120px) {
+  .cloud_inf {
+    display: none;
+  }
+
+  .cloud_inf p {
+    font-size: 14px;
+  }
+
+  .beckups_brightness {
+    width: 100%;
+    height: 50rem;
+  }
+  .beckups_brightness span {
+    margin-left: 0.01rem;
+    font-size: 1.4rem;
+    width: 250px;
+    margin-bottom: -10rem;
+    text-align: center;
+  }
+  .beckups_area {
+    width: 90%;
+    height: 50rem;
+    align-self: center;
+  }
+
+  .inf_area {
+    flex-direction: column-reverse;
+    display: flex;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .inf_area button {
+    margin-bottom: 0rem;
+    align-self: center;
+    justify-self: center;
+    margin-left: 6rem;
+    width: 120px;
+  }
+
+  .inf_area p {
+    font-size: 16px;
+    align-self: center;
+    text-align: center;
+  }
+
+}
