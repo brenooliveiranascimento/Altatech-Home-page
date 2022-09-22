@@ -6,7 +6,9 @@ import './Hero.css';
 function HeroFooter() {
   return (
     <footer className="hero_footer">
-      <section className="news_tetter_area">
+      <section
+        className="news_tetter_area"
+      >
         <p className="news_latter">Receba nossa newsletter</p>
         <section className="input_area">
           <input

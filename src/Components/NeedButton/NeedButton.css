@@ -95,3 +95,9 @@
 .close:hover {
   color: #ddd;
 }
+
+@media screen and (max-width: 740px) {
+  .i_need {
+    display: none;
+  }
+}
