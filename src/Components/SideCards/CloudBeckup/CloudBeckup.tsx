@@ -19,8 +19,8 @@ export default function CloudBeckup() {
         <section className="inf_area">
           <section>
             <p>
-              com a
-              Criptografia de ponta a ponta os dados de sua empresa estarão sempre em segurança
+              com a Criptografia de ponta a ponta os dados de sua
+              empresa estarão sempre em segurança
             </p>
             <button
               className="button_confere"

@@ -45,10 +45,6 @@
   margin-top: -15px;
   font-family: poppins;
   line-height: 1.4rem;
-  width: 80%;
-  margin-left: 2rem;
-  align-self: center;
-  justify-self: center;
 }
 
 .inf_area button {
@@ -91,6 +87,7 @@
   font-size: 1.5rem;
 }
 
+
 @media screen and (max-width: 1120px) {
   .cloud_inf {
     display: none;
@@ -130,12 +127,14 @@
     margin-bottom: 0rem;
     align-self: center;
     justify-self: center;
-    margin-left: 6rem;
+    margin-left: 1.8rem;
     width: 120px;
   }
 
   .inf_area p {
     font-size: 16px;
+    width: 200px;
+    margin-left: -1rem;
     align-self: center;
     text-align: center;
   }
