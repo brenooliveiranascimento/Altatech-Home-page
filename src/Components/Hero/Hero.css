@@ -1,15 +1,16 @@
 .hero_container {
-  height: 95vh;
+  height: 80vh;
   width: 100%;
   background: url("../../images//altatech.jpg") center;
   background-size: cover;
   z-index: 0;
   color: white;
+  font-family: poppins;
 }
 
 .hero_brightness {
   width: 100%;
-  height: 95vh;
+  height: 80vh;
   z-index: 1;
   align-items: center;
   justify-content: center;
@@ -19,5 +20,36 @@
 }
 
 .hero_inf {
-  
+  transition: all 0.5s;
+  width: 1120px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  height: 550px;
+  align-self: flex-end;
+}
+
+.left_hero_centent {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+}
+
+.left_hero_centent h1 {
+  font-size: 50px;
+}
+
+.left_hero_centent span {
+  margin-top: -7rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.hero_footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
