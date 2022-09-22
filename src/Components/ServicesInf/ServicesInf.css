@@ -4,3 +4,8 @@
   width: 100%;
   justify-content: flex-end;
 }
+@media screen and (max-width: 1120px) {
+  .services_inf_container {
+    flex-direction: column;
+  }
+}

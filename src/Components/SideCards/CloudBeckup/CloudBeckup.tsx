@@ -23,6 +23,7 @@ export default function CloudBeckup() {
               Criptografia de ponta a ponta os dados de sua empresa estarão sempre em segurança
             </p>
             <button
+              className="button_confere"
               type="button"
             >
               <h1>Confira aqui!</h1>

@@ -9,14 +9,6 @@ import CloudBeckup from '../SideCards/CloudBeckup/CloudBeckup';
 import CloudInf from '../SideCards/CloudBeckup/CloudInf';
 
 function ServicesInf() {
-  const defaultOptionsLoading: any = {
-    loop: true,
-    autoplay: true,
-    animationData: beckup2,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  };
   return (
     <main className="services_inf_container">
       <CloudInf />
