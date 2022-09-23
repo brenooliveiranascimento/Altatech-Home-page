@@ -1,0 +1,26 @@
+.server_container {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.server_image_container {
+  width: 1120px;
+  height: 60vh;
+  z-index: 10;  background: url("../../../images/altatech2.jpg") center;
+  background-size: cover;
+  transition: all 0.5s;
+  display: flex;
+}
+
+.server_image_darkness {
+  z-index: 11;
+  align-items: center;  width: 1120px;
+  height: 60vh;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  background-color: rgba(19, 23, 43,0.3);
+}
