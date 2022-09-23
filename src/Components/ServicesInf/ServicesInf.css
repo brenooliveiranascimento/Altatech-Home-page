@@ -1,6 +1,6 @@
 .services_inf_container {
   display: flex;
-  height: 120vh;
+  height: 140vh;
   width: 100%;
   justify-content: flex-end;
 }
@@ -8,5 +8,11 @@
   .services_inf_container {
     flex-direction: column;
     margin-top: -10rem;
+  }
+}
+
+@media screen and (max-height: 689px) {
+  .services_inf_container {
+    margin-top: 10%;
   }
 }
