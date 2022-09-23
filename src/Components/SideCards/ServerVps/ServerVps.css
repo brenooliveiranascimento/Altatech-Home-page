@@ -175,5 +175,7 @@
 @media screen and (max-height: 804px) {
   .server_container {
     height: 135vh;
+    background-color: none;
+    background: none;
   }
 }
