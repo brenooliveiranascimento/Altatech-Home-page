@@ -16,7 +16,7 @@ function CloudInf() {
             zIndex: 99,
           }}
           width="600"
-          height="350"
+          height="300"
           src="https://www.youtube.com/embed/qPsXIhbtxyI"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
