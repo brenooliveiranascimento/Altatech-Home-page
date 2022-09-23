@@ -1,0 +1,10 @@
+.request_quote {
+  width: 5rem;
+  height: 10rem;
+  margin-bottom: -8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29A9E0;
+  color: white;
+}
