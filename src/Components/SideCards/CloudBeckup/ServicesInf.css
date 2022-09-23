@@ -41,6 +41,10 @@
   font-size: 20px;
 }
 
+.cloud_inf_container {
+  display: flex;
+}
+
 .inf_area p {
   margin-top: -15px;
   font-family: poppins;
@@ -87,6 +91,12 @@
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1300px) {
+  .cloud_inf {
+    width: 100%;
+  }
+}
+
 
 @media screen and (max-width: 1120px) {
   .cloud_inf {
@@ -101,6 +111,7 @@
     width: 100%;
     height: 50rem;
   }
+
   .beckups_brightness span {
     margin-left: 0.01rem;
     font-size: 1.4rem;

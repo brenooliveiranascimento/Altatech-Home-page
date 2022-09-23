@@ -4,7 +4,7 @@ import './ServicesInf.css';
 
 function CloudInf() {
   return (
-    <section>
+    <section className="cloud_inf_container">
       <CloudFind />
       <section className="cloud_inf">
         <h1>Backup em nuvem Corporativo</h1>
