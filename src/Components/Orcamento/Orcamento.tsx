@@ -26,6 +26,7 @@ function Orcamento() {
               alignSelf: 'center',
               justifyContent: 'center',
               marginLeft: -20,
+              marginTop: '-4rem',
               width: 650,
             }}
             options={defaultOptionsLoading}
