@@ -1,15 +1,19 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import CloudFind from './CloudFind/CloudFind';
 import './ServicesInf.css';
 
 function CloudInf() {
+  const beckupHeader = useSelector(({ interfaceData }: any) => interfaceData.data.beckup1Header);
+  const beckupBody = useSelector(({ interfaceData }: any) => interfaceData.data.beckupBody);
+
   return (
     <section className="cloud_inf_container">
       <CloudFind />
       <section className="cloud_inf">
-        <h1>Backup em nuvem Corporativo</h1>
+        <h1>{beckupHeader}</h1>
         <p>
-          Uma solução de segurança avançada e econômica para seus dados.
+          {beckupBody}
         </p>
         <iframe
           style={{
