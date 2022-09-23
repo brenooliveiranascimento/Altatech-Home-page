@@ -16,7 +16,7 @@ interface actionType {
 export function interfaceData(state = interfaceInitialState, action: actionType) {
   switch (action.type) {
     case 'FETCH_DATA':
-      return { ...state };
+      return { ...state, data: action.payload };
     case 'UPDATE_DATA':
       return { ...state, data: action.payload };
     default:
