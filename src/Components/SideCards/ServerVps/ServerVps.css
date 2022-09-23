@@ -1,0 +1,117 @@
+.server_container {
+  width: 100%;
+  height: 30vh;
+  margin-top: -12rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #0382C3;
+  z-index: 10;  background: url("../../../images/Cloud.jpeg") center;
+  background-size: cover;
+}
+
+.server_container_white {
+  width: 50%;
+  height: 30vh;
+  position: absolute;
+  right: 0px;
+  margin-top: -12rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.server_container_brighness {
+  width: 50%;
+  height: 30vh;
+  position: absolute;
+  left: 0px;
+  margin-top: -12rem;
+  z-index: 7;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgba(19, 23, 43,0.9);
+}
+
+.server_image_container {
+  width: 1120px;
+  height: 60vh;
+  z-index: 10;  background: url("../../../images/server1.jpg") center;
+  background-size: cover;
+  transition: all 0.5s;
+  display: flex;
+}
+
+.server_image_darkness {
+  z-index: 11;
+  align-items: center;  width: 1120px;
+  height: 60vh;
+  justify-content: space-between;
+  position: absolute;
+  display: flex;
+  background-color: rgba(19, 23, 43,0.7);
+}
+
+.action_btn{
+  background-color: #5198C7;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 250px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 600;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.action_btn:hover {
+  background-color: #0382C3;
+}
+
+.server_vps_dark_side {
+  align-self: flex-end;
+  width: 550px;
+  justify-self: flex-end;
+  height: 230px;
+  background-color: rgba(19, 23, 43);
+  padding: 3rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.server_vps_dark_side span{
+  color: #ddd;
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+}
+
+
+
+.server_inf_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: 380px;
+}
+
+.server_inf_area h1 {
+  font-size: 2rem;
+  color: white;
+  margin-top: 4rem;
+  font-family: poppins;
+  margin-bottom: 2rem;
+}
+
+.server_inf_area span {
+  font-size: 1.5rem;
+  font-family: poppins;
+  color: white;
+}
