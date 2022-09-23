@@ -1,0 +1,72 @@
+.orcament_container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orcamento_limit {
+  width: 1120px;
+  height: auto;
+  display: flex;
+}
+
+.user_form_area {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+  background-color: #BFC4C8;
+}
+
+.user_form_area h1{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.message_area {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+  background-color: #14172B;
+}
+
+.message_area input, textarea {
+  width: 80%;
+  margin: 0.5rem;
+  border-width: 0px 0px 1px;
+  font-size: 1.3rem;
+  padding: 5px;
+  color: white;
+  font-family: sans-serif;
+  border-color: white;
+  background-color: #14172B;
+}
+
+.message_area textarea {
+  border: 1px solid white;
+  border-radius: 0.4rem;
+  margin-top: 2rem;
+  height: 7rem;
+}
+
+.message_area button {
+  background-color: #213b89;
+  border: none;
+  color: white;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 80%;
+  transition: all 0.5s;
+}
+
+.message_area button:hover {
+  background-color: #2645a1;
+}
