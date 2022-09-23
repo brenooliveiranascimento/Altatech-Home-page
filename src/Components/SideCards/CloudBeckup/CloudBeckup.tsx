@@ -1,9 +1,13 @@
 import React from 'react';
 import './ServicesInf.css';
 import Lottie from 'react-lottie';
+import { useSelector } from 'react-redux';
 import beckup2 from '../../../lottie/beckup2.json';
 
 export default function CloudBeckup() {
+  const beckupHeader = useSelector(({ interfaceData }: any) => interfaceData.data.beckup1Header2);
+  const beckupBody = useSelector(({ interfaceData }: any) => interfaceData.data.beckupBody2);
+
   const defaultOptionsLoading: any = {
     loop: true,
     autoplay: true,
@@ -15,12 +19,11 @@ export default function CloudBeckup() {
   return (
     <section className="beckups_area">
       <section className="beckups_brightness">
-        <span>Backup em nuvem: Segurança avançada para seus Dados</span>
+        <span>{beckupHeader}</span>
         <section className="inf_area">
           <section className="ing_content">
             <p>
-              com a Criptografia de ponta a ponta os dados de sua
-              empresa estarão sempre em segurança
+              {beckupBody}
             </p>
             <button
               className="button_confere"
