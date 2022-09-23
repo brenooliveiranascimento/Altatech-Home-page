@@ -22,13 +22,20 @@ function ServerVps() {
               style={{
                 alignSelf: 'flex-end',
                 justifyContent: 'center',
-                width: 320,
-                height: 250,
+                width: 360,
+                height: 300,
               }}
               options={defaultOptionsLoading}
             />
           </section>
-          <section className="server_vps_dark_side" />
+          <section className="server_vps_dark_side">
+            <span>
+              Nosso server Cloud dispõe de segurança
+              para sua aplicação e performance.
+              Com preços previsíveis e escalabilidade para
+              suportar seu crescimento em qualquer estágio.
+            </span>
+          </section>
         </section>
       </section>
     </section>
