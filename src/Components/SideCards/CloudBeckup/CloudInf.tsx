@@ -10,12 +10,19 @@ function CloudInf() {
         <h1>Backup em nuvem Corporativo</h1>
         <p>
           Uma solução de segurança avançada e econômica para seus dados.
-          <br />
-          <br />
-          Com backups automáticos e criptografados,
-          os dados de sua empresa estarão sempre em segurança no cloud (nuvem) contra desastres,
-          brechas na rede, roubos de equipamentos, ransomware (vírus) ou sequestro virtuais.
         </p>
+        <iframe
+          style={{
+            zIndex: 99,
+          }}
+          width="600"
+          height="350"
+          src="https://www.youtube.com/embed/qPsXIhbtxyI"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Embedded youtube"
+        />
       </section>
     </section>
   );

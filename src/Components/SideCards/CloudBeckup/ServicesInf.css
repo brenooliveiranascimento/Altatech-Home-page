@@ -83,12 +83,14 @@
 .cloud_inf h1 {
   color: #1c203e;
   font-size: 2.5rem;
+  margin-bottom: -1rem;
+  margin-top: -3rem;
   font-family: poppins;
   font-weight: 600;
 }
 
 .cloud_inf p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 1300px) {
