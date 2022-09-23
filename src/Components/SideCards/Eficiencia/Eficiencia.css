@@ -1,0 +1,28 @@
+.partners_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #1c203e;
+  margin-top: 10rem;
+  align-items: flex-start;
+}
+
+.partners_limit {
+  width: 1120px;
+  height: 40vh;
+  background-color: #5198C7;
+  margin-top: -10rem;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.partners_limit h1 {
+  font-size: 3rem;
+  width: 740px;
+  margin-left: 1rem;
+  text-align: start;
+}
