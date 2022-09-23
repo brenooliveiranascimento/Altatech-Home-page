@@ -16,7 +16,7 @@
   justify-content: center;
   position: absolute;
   display: flex;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(19, 23, 43,0.8);
 }
 
 .hero_inf {
@@ -38,6 +38,7 @@
 
 .left_hero_centent h1 {
   font-size: 50px;
+  width: 500px;
 }
 
 .left_hero_centent span {
@@ -108,7 +109,18 @@
     font-size: 35px;
     width: 90%;
     height: auto;
+    width: 80%;
     padding-bottom: 3rem;
     margin-top: 10rem;
   }
 }
+
+@media screen and (max-height: 689px) {
+  .hero_container {
+    height: 110vh;
+  }
+  .hero_brightness {
+    height: 110vh;
+  }
+}
+
