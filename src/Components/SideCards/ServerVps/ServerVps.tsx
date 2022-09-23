@@ -22,7 +22,7 @@ function ServerVps() {
               style={{
                 alignSelf: 'flex-end',
                 justifyContent: 'center',
-                width: 360,
+                width: 430,
                 height: 300,
               }}
               options={defaultOptionsLoading}
@@ -35,9 +35,17 @@ function ServerVps() {
               Com preços previsíveis e escalabilidade para
               suportar seu crescimento em qualquer estágio.
             </span>
+            <button
+              type="button"
+              className="action_btn"
+            >
+              Confira Aqui
+            </button>
           </section>
         </section>
       </section>
+      <section className="server_container_white" />
+      <section className="server_container_brighness" />
     </section>
   );
 }
