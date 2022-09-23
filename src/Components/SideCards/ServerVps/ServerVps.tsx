@@ -18,15 +18,15 @@ function ServerVps() {
         <section className="server_image_darkness">
           <section className="server_inf_area">
             <h1>Server VPS: Tenha seu servidor virtual </h1>
-            <Lottie
-              style={{
-                alignSelf: 'flex-end',
-                justifyContent: 'center',
-                width: 430,
-                height: 300,
-              }}
-              options={defaultOptionsLoading}
-            />
+            <section className="animated_logo">
+              <Lottie
+                style={{
+                  alignSelf: 'flex-end',
+                  justifyContent: 'center',
+                }}
+                options={defaultOptionsLoading}
+              />
+            </section>
           </section>
           <section className="server_vps_dark_side">
             <span>

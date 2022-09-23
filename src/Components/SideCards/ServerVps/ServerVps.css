@@ -6,7 +6,8 @@
   align-items: flex-end;
   justify-content: center;
   background-color: #0382C3;
-  z-index: 10;  background: url("../../../images/Cloud.jpeg") center;
+  z-index: 10;
+  background: url("../../../images/Cloud.jpeg") center;
   background-size: cover;
 }
 
@@ -47,7 +48,8 @@
 
 .server_image_darkness {
   z-index: 11;
-  align-items: center;  width: 1120px;
+  align-items: center;
+  width: 1120px;
   height: 60vh;
   justify-content: space-between;
   position: absolute;
@@ -91,14 +93,11 @@
   font-size: 1.8rem;
 }
 
-
-
 .server_inf_area {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
   width: 380px;
 }
 
@@ -114,4 +113,67 @@
   font-size: 1.5rem;
   font-family: poppins;
   color: white;
+}
+
+@media screen and (max-width: 1120px) {
+  .server_container_white {
+    display: none;
+  }
+  .server_container_brighness {
+    display: none;
+  }
+  .server_image_container {
+    width: 90%;
+    height: 60rem;
+  }
+
+  .server_inf_area {
+    width: 80%;
+  }
+
+  .server_image_darkness {
+    height: 60rem;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .server_container {
+    height: 100vh;
+    margin-top: 10rem;
+    background: none;
+  }
+
+  .server_inf_area h1 {
+    font-size: 2rem;
+    padding-top: 6rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .animated_logo {
+    width: 290px;
+  }
+
+  .server_vps_dark_side {
+    width: 70%;
+    align-self: center;
+    height: auto;
+    align-items: center;
+  }
+
+  .server_vps_dark_side span {
+    text-align: center;
+  }
+
+  .server_vps_dark_side button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-height: 804px) {
+  .server_container {
+    height: 135vh;
+  }
 }
