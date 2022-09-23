@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import Header from '../../Components/Header/Header';
 import Hero from '../../Components/Hero/Hero';
 import Orcamento from '../../Components/Orcamento/Orcamento';
@@ -8,10 +9,12 @@ import CloudService from '../../Components/ServicesInf/CloudService';
 import ServerVps from '../../Components/SideCards/ServerVps/ServerVps';
 import { requestInterfaceData } from '../../services/requestData/reuqestData';
 import './Home.css';
+import { requestIterfaceInDatabase } from '../../redux/actions/interfaceActions';
 
 export default function Home() {
+  const dispatch = useDispatch();
   const requestData = async () => {
-    return requestInterfaceData();
+    dispatch(requestIterfaceInDatabase());
   };
 
   useEffect(() => {

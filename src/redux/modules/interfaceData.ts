@@ -10,15 +10,22 @@ const interfaceInitialState = {
 
 interface actionType {
   type: string,
-  payload: {}
+  payload: {
+    interfaceData: {
+      beckup1Header: string,
+      beckupBody: string,
+      beckup1Header2: string,
+      beckupBody2: string,
+    }
+  }
 }
 
 export function interfaceData(state = interfaceInitialState, action: actionType) {
   switch (action.type) {
     case 'FETCH_DATA':
-      return { ...state, data: action.payload };
+      return { ...state, data: action.payload.interfaceData };
     case 'UPDATE_DATA':
-      return { ...state, data: action.payload };
+      return { ...state, data: action.payload.interfaceData };
     default:
       return state;
   }
