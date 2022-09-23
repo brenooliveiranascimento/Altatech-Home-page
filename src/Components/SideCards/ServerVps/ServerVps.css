@@ -80,6 +80,7 @@
   align-self: flex-end;
   width: 550px;
   justify-self: flex-end;
+  justify-content: center;
   height: 230px;
   background-color: rgba(19, 23, 43);
   padding: 3rem;
