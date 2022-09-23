@@ -99,6 +99,7 @@
   align-items: center;
   justify-content: center;
   width: 380px;
+  padding-left: 3rem;
 }
 
 .server_inf_area h1 {
@@ -129,6 +130,7 @@
 
   .server_inf_area {
     width: 80%;
+    padding-left: 0px;
   }
 
   .server_image_darkness {
