@@ -19,7 +19,7 @@ function Orcamento() {
         <OrçamentForm />
         <section className="user_form_area">
           <h1>
-            Faça o orçamento
+            Solicite agora seu orçamento
           </h1>
           <Lottie
             style={{
