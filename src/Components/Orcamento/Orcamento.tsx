@@ -21,16 +21,16 @@ function Orcamento() {
           <h1>
             Solicite agora seu orçamento
           </h1>
-          <Lottie
-            style={{
-              alignSelf: 'center',
-              justifyContent: 'center',
-              marginLeft: -20,
-              marginTop: '-4rem',
-              width: 650,
-            }}
-            options={defaultOptionsLoading}
-          />
+          <section>
+            <Lottie
+              style={{
+                alignSelf: 'center',
+                justifyContent: 'center',
+                marginTop: '-4rem',
+              }}
+              options={defaultOptionsLoading}
+            />
+          </section>
         </section>
       </section>
     </section>

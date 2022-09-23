@@ -70,3 +70,33 @@
 .message_area button:hover {
   background-color: #2645a1;
 }
+
+@media screen and (max-width: 1120px) {
+  .orcament_container {
+    height: 130vh;
+  }
+  .orcamento_limit {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .message_area {
+    width: 90%;
+  }
+
+  .user_form_area {
+    width: 90%;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user_form_area h1 {
+    justify-self: center;
+    background-color: xsred;
+    width: 80%;
+    font-size: 1.6rem;
+    padding: 3rem;
+    margin-top: -1rem;
+    text-align: center;
+  }
+}
