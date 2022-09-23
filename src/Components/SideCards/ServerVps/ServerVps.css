@@ -6,7 +6,8 @@
   align-items: flex-end;
   justify-content: center;
   background-color: #0382C3;
-  z-index: 10;  background: url("../../../images/Cloud.jpeg") center;
+  z-index: 10;
+  background: url("../../../images/Cloud.jpeg") center;
   background-size: cover;
 }
 
@@ -91,8 +92,6 @@
   font-size: 1.8rem;
 }
 
-
-
 .server_inf_area {
   display: flex;
   flex-direction: column;
@@ -114,4 +113,42 @@
   font-size: 1.5rem;
   font-family: poppins;
   color: white;
+}
+
+@media screen and (max-width: 1120px) {
+  .server_container_white {
+    display: none;
+  }
+  .server_container_brighness {
+    display: none;
+  }
+  .server_image_container {
+    width: 90%;
+    height: 60rem;
+  }
+
+  .server_image_darkness {
+    height: 60rem;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .server_container {
+    height: 100vh;
+    margin-top: 10rem;
+    background: none;
+  }
+
+  .server_vps_dark_side {
+    width: 80%;
+    align-self: center;
+    height: auto;
+    align-items: center;
+  }
+
+  .server_vps_dark_side span {
+    text-align: center;
+  }
 }
