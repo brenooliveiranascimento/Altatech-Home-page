@@ -1,7 +1,7 @@
 import React from 'react';
 import './Eficiencia.css';
 
-export default function Eficiencia() {
+function Eficiencia() {
   return (
     <section className="partners_limit">
       <h1>
@@ -11,3 +11,5 @@ export default function Eficiencia() {
     </section>
   );
 }
+
+export default Eficiencia;
