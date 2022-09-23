@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center;
   font-family: poppins;
+  background-color: #BFC4C8;
 }
 
 .user_form_area h1{
@@ -39,6 +40,7 @@
   margin: 0.5rem;
   border-width: 0px 0px 1px;
   font-size: 1.3rem;
+  padding: 5px;
   color: white;
   font-family: sans-serif;
   border-color: white;
@@ -48,6 +50,7 @@
 .message_area textarea {
   border: 1px solid white;
   border-radius: 0.4rem;
+  margin-top: 2rem;
 }
 
 .message_area button {
@@ -57,4 +60,10 @@
   margin: 1rem;
   padding: 1rem 3rem;
   font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.message_area button:hover {
+  background-color: #2645a1;
 }

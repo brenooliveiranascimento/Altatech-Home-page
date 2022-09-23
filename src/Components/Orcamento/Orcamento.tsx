@@ -15,6 +15,16 @@ function Orcamento() {
   return (
     <section className="orcament_container">
       <section className="orcamento_limit">
+        <section className="message_area">
+          <input placeholder="Nome" />
+          <input placeholder="Telefone" />
+          <input placeholder="Email" />
+          <input placeholder="CNPJ" />
+          <textarea placeholder="Menssagem" />
+          <button type="button">
+            Enviar
+          </button>
+        </section>
         <section className="user_form_area">
           <h1>
             Faça o orçamento
@@ -27,16 +37,6 @@ function Orcamento() {
             }}
             options={defaultOptionsLoading}
           />
-        </section>
-        <section className="message_area">
-          <input placeholder="Nome" />
-          <input placeholder="Telefone" />
-          <input placeholder="Email" />
-          <input placeholder="CNPJ" />
-          <textarea placeholder="Menssagem" />
-          <button type="button">
-            Enviar
-          </button>
         </section>
       </section>
     </section>
