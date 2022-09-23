@@ -16,17 +16,27 @@ function Orcamento() {
     <section className="orcament_container">
       <section className="orcamento_limit">
         <section className="user_form_area">
+          <h1>
+            Faça o orçamento
+          </h1>
           <Lottie
             style={{
-              alignSelf: 'flex-end',
-              justifyContent: 'center',
-              width: 550,
+              alignSelf: 'flex-start',
+              justifyContent: 'flex-start',
+              width: 650,
             }}
             options={defaultOptionsLoading}
           />
         </section>
         <section className="message_area">
-          <h1>Message</h1>
+          <input placeholder="Nome" />
+          <input placeholder="Telefone" />
+          <input placeholder="Email" />
+          <input placeholder="CNPJ" />
+          <textarea placeholder="Menssagem" />
+          <button type="button">
+            Enviar
+          </button>
         </section>
       </section>
     </section>
