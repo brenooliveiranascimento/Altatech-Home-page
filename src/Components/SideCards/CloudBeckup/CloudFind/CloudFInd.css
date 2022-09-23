@@ -1,0 +1,17 @@
+.request_quote {
+  width: 7rem;
+  height: 15rem;
+  margin-bottom: -8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29A9E0;
+  color: white;
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 1524px) {
+  .request_quote {
+    display: none;
+  }
+}
