@@ -13,7 +13,7 @@ function CloudInf() {
         </p>
         <iframe
           style={{
-            zIndex: 99,
+            zIndex: 10,
           }}
           width="600"
           height="300"

@@ -18,7 +18,7 @@ function Header() {
   }, []);
   return (
     <header
-      style={{ backgroundColor: scroll > 125 ? 'rgba(28, 32, 62,0.9)' : 'rgba(0,0,0,0.0)' }}
+      style={{ backgroundColor: scroll > 125 ? 'rgba(28, 32, 62)' : 'rgba(0,0,0,0.0)' }}
       className="header_container"
     >
       <section style={{ height: scroll > 125 ? '7rem' : '10rem' }} className="limit_content">
