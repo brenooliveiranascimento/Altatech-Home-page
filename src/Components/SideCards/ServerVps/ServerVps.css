@@ -42,7 +42,6 @@
   height: 60vh;
   z-index: 10;  background: url("../../../images/server1.jpg") center;
   background-size: cover;
-  transition: all 0.5s;
   display: flex;
 }
 
@@ -149,14 +148,14 @@
   }
 
   .server_inf_area h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-top: 6rem;
     width: 80%;
     text-align: center;
   }
 
   .animated_logo {
-    width: 290px;
+    margin-bottom: 3rem;
   }
 
   .server_vps_dark_side {
@@ -168,6 +167,7 @@
 
   .server_vps_dark_side span {
     text-align: center;
+    font-size: 1.2rem;
   }
 
   .server_vps_dark_side button {

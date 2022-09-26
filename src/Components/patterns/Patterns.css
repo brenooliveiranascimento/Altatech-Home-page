@@ -1,0 +1,28 @@
+.paterns_container {
+  display: flex;
+  width: 100%;
+  background-color: #1c203e;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+  color: white;
+  flex-direction: column;
+}
+
+.paterns_container h1 {
+  font-size: 2rem;
+}
+
+.card_area {
+  width: 1120px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partner_card_container {
+  margin: 0.5rem
+}
