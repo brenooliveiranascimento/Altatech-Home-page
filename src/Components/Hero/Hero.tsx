@@ -18,6 +18,7 @@ function Hero() {
             <TypeAnimation
               sequence={[`${heroInf}`, 1300]}
               wrapper="h1"
+              className="hero_message"
               speed={5}
             />
             <span>Sobre nos</span>
