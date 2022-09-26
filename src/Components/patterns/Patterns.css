@@ -26,3 +26,18 @@
 .partner_card_container {
   margin: 0.5rem
 }
+
+@media screen and (max-width: 1120px) {
+  .paterns_container {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .paterns_container h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card_area {
+    width: 90%;
+  }
+}
