@@ -22,7 +22,6 @@ const interfaceInitialState = {
     { name: 'Parceiro 6', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/10ce6eca4b95626888e72ab8773dd615.png', url: '' },
     { name: 'Parceiro 7', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/c61c9119e688342edb78b35ba8e6a96c.png', url: '' },
     { name: 'Parceiro 8', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/18e00fa21512a3aac30d569415f9e550.png', url: '' },
-    { name: 'Parceiro 9', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/18e00fa21512a3aac30d569415f9e550.png', url: '' },
     { name: 'Parceiro 10', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/9b22c203326020227017829bd1311d2d.png', url: '' },
   ],
 };
