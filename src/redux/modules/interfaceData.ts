@@ -11,6 +11,20 @@ const interfaceInitialState = {
     Com preços previsíveis e escalabilidade para
     suportar seu crescimento em qualquer estágio.`,
   },
+  parceiros: [
+    { name: 'Parceiro 1' },
+    { name: 'Parceiro 2' },
+    { name: 'Parceiro 3' },
+    { name: 'Parceiro 4' },
+    { name: 'Parceiro 5' },
+    { name: 'Parceiro 6' },
+    { name: 'Parceiro 7' },
+    { name: 'Parceiro 6' },
+    { name: 'Parceiro 7' },
+    { name: 'Parceiro 8' },
+    { name: 'Parceiro 9' },
+    { name: 'Parceiro 10' },
+  ],
 };
 
 interface actionType {
@@ -23,6 +37,7 @@ interface actionType {
       beckupBody2: string,
     }
   }
+  parceiros: []
 }
 
 export function interfaceData(state = interfaceInitialState, action: actionType) {
@@ -31,6 +46,8 @@ export function interfaceData(state = interfaceInitialState, action: actionType)
       return { ...state, data: action.payload.interfaceData };
     case 'UPDATE_DATA':
       return { ...state, data: action.payload.interfaceData };
+    case 'UPDATE_PARCEIROS':
+      return { ...state, parceiros: action.parceiros };
     default:
       return state;
   }
