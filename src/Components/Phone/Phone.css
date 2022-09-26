@@ -1,0 +1,21 @@
+.footer_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1C203E;
+  color: white;
+  height: 70vh;
+  flex-direction: column;
+}
+
+.number_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.numbers_content {
+  display: flex;
+  width: 1120px;
+  align-items: center;
+  justify-content: space-between;
+}

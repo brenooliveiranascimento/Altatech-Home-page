@@ -11,6 +11,7 @@ import './Home.css';
 import { requestIterfaceInDatabase } from '../../redux/actions/interfaceActions';
 import Eficienty from '../../Components/Eficiency/Eficiency';
 import Patterns from '../../Components/patterns/Patterns';
+import Footer from '../../Components/Footer/Footer';
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -30,6 +31,7 @@ export default function Home() {
       <Orcamento />
       <Eficienty />
       <Patterns />
+      <Footer />
     </section>
   );
 }
