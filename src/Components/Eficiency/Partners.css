@@ -27,3 +27,20 @@
   margin-left: 1rem;
   text-align: start;
 }
+
+@media screen and (max-width: 1120px) {
+  .partners_limit {
+    width: 90%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .partners_limit h1 {
+    font-size: 1.7rem;
+    margin-left: -1rem;
+  }
+  .partners_container {
+    align-items: center;
+    height: 10vh;
+  }
+}

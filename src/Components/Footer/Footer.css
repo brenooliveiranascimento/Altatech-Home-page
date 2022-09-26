@@ -4,7 +4,8 @@
   justify-content: center;
   background-color: #1C203E;
   color: white;
-  height: 70vh;
+  height: auto;
+  min-height: 20rem;
   flex-direction: column;
 }
 
