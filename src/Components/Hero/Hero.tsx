@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
@@ -9,6 +9,8 @@ import './Hero.css';
 
 function Hero() {
   const heroInf = useSelector(({ interfaceData }: any) => interfaceData.data.hero);
+  const isLoged = useSelector(({ userData }: any) => userData);
+  const [isEdit, setIsEdit] = useState(false);
 
   return (
     <section className="hero_container">
