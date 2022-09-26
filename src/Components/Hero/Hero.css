@@ -41,6 +41,10 @@
   width: 500px;
 }
 
+.hero_message {
+  height: 10rem;
+}
+
 .left_hero_centent span {
   margin-top: -7rem;
   text-decoration: underline;

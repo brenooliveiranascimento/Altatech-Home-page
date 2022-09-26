@@ -31,3 +31,13 @@
 .gray_font {
   color: #aaa;
 }
+
+@media screen and (max-width: 1120px) {
+  .service_container {
+    flex-direction: column;
+  }
+  .services_limit {
+    width: 90%;
+    flex-direction: column;
+  }
+}
