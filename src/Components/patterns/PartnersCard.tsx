@@ -1,10 +1,14 @@
 import React from 'react';
 import { partnersType } from '../../Types/types';
+import './Patterns.css';
 
 function Partners({ partners }:any) {
   return (
-    <section>
-      <h1>{partners.name}</h1>
+    <section className="partner_card_container">
+      <img
+        alt={partners.name}
+        src={partners.image}
+      />
     </section>
   );
 }

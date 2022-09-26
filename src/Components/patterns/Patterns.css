@@ -22,3 +22,7 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.partner_card_container {
+  margin: 0.5rem
+}
