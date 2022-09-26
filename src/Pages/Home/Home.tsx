@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Header from '../../Components/Header/Header';
 import Hero from '../../Components/Hero/Hero';
 import Orcamento from '../../Components/Orcamento/Orcamento';
@@ -19,6 +19,7 @@ export default function Home() {
   const requestData = async () => {
     dispatch(requestIterfaceInDatabase());
   };
+  const isLoged = useSelector(({ userData }:any) => userData);
 
   useEffect(() => {
     requestData();
@@ -33,7 +34,7 @@ export default function Home() {
       <Eficienty />
       <Patterns />
       <Footer />
-      <EditButton />
+      {isLoged.loged && <EditButton />}
     </section>
   );
 }

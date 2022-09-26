@@ -24,6 +24,7 @@ const interfaceInitialState = {
     { name: 'Parceiro 8', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/18e00fa21512a3aac30d569415f9e550.png', url: '' },
     { name: 'Parceiro 10', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/9b22c203326020227017829bd1311d2d.png', url: '' },
   ],
+  isEdit: false,
 };
 
 interface actionType {
@@ -47,6 +48,8 @@ export function interfaceData(state = interfaceInitialState, action: actionType)
       return { ...state, data: action.payload.interfaceData };
     case 'UPDATE_PARCEIROS':
       return { ...state, parceiros: action.parceiros };
+    case 'HANDLE_EDIT':
+      return { ...state, isEdit: !state.isEdit };
     default:
       return state;
   }
