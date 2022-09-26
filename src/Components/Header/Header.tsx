@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { FiSearch, FiShoppingCart, FiMenu } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import altaLogo from '../../images/Altatech_ALTA_icon.svg';
 
 function Header() {
@@ -51,12 +52,11 @@ function Header() {
               >
                 <FiMenu className="menu" />
               </button>
-              <button
-                type="button"
-                className="button_entrar"
-              >
-                Entrar
-              </button>
+              <Link to="/auth">
+                <button className="button_entrar" type="button">
+                  Entrar
+                </button>
+              </Link>
             </section>
           </nav>
         </section>
