@@ -7,8 +7,18 @@
   justify-content: center;
   font-family: poppins;
   color: white;
+  flex-direction: column;
 }
 
 .paterns_container h1 {
   font-size: 2rem;
+}
+
+.card_area {
+  width: 1120px;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -11,11 +11,13 @@ function Patterns() {
       <h1>
         Esses são nossos parceiros
       </h1>
-      {
-        partners && partners.map((partner: partnersType) => (
-          <Partners partners={partner} />
-        ))
-      }
+      <section className="card_area">
+        {
+          partners && partners.map((partner: partnersType) => (
+            <Partners partners={partner} />
+          ))
+        }
+      </section>
     </section>
   );
 }
