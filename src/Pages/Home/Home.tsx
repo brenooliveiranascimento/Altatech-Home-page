@@ -3,13 +3,14 @@ import { useDispatch } from 'react-redux';
 import Header from '../../Components/Header/Header';
 import Hero from '../../Components/Hero/Hero';
 import Orcamento from '../../Components/Orcamento/Orcamento';
-import Partners from '../../Components/Partners/Partners';
 import Services from '../../Components/Services/Services';
 import CloudService from '../../Components/ServicesInf/CloudService';
 import ServerVps from '../../Components/SideCards/ServerVps/ServerVps';
 import { requestInterfaceData } from '../../services/requestData/reuqestData';
 import './Home.css';
 import { requestIterfaceInDatabase } from '../../redux/actions/interfaceActions';
+import Eficienty from '../../Components/Eficiency/Eficiency';
+import Patterns from '../../Components/patterns/Patterns';
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -27,7 +28,8 @@ export default function Home() {
       <CloudService />
       <ServerVps />
       <Orcamento />
-      <Partners />
+      <Eficienty />
+      <Patterns />
     </section>
   );
 }

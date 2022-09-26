@@ -1,11 +1,12 @@
 .partners_container {
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
   background-color: #1c203e;
   margin-top: 10rem;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .partners_limit {
