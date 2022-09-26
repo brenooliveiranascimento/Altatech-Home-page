@@ -22,5 +22,21 @@
 }
 
 @media screen and (max-width: 1120px) {
-  
+  .footer_container {
+    align-items: center;
+    justify-content: center;
+  }
+  .numbers_content {
+    align-items: center;
+    justify-content: center;
+  }
+  .numbers_content {
+    width: 70%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .number_container {
+    margin-top: 1rem;
+  }
 }
