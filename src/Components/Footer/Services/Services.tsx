@@ -18,6 +18,17 @@ export default function Services() {
           <span>Perguntas Frequentes</span>
           <span>Sobre a Altatech</span>
         </section>
+        <section className="service_content gray_font">
+          <span>Atendimento de Segunda a Sexta das 08:00 às 18:00</span>
+          <span>Av. Juscelino Kubitscheck, 1905 - Centro</span>
+          <span>CEP 86010-540 - Londrina - PR</span>
+          <span>comercial@altatech.com.br</span>
+        </section>
+        <section className="service_content gray_font">
+          <span>Copyright © 2022</span>
+          <span>Todos os Direitos Reservados</span>
+          <span>CNPJ: 05.365.132/0001-30</span>
+        </section>
       </section>
     </section>
   );
