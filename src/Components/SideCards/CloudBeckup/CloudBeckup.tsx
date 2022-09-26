@@ -19,11 +19,12 @@ export default function CloudBeckup() {
   return (
     <section className="beckups_area">
       <section className="beckups_brightness">
-        <span>{beckupHeader}</span>
+        <span>Backup em nuvem: Segurança avançada para seus Dados</span>
         <section className="inf_area">
           <section className="ing_content">
             <p>
-              {beckupBody}
+              com a Criptografia de ponta a ponta os dados de sua
+              empresa estarão sempre em segurança
             </p>
             <button
               className="button_confere"

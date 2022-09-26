@@ -5,6 +5,11 @@ const interfaceInitialState = {
     beckupBody: 'Uma solução de segurança avançada e econômica para seus dados',
     beckup1Header2: 'Backup em nuvem: Segurança avançada para seus Dados',
     beckupBody2: 'com a Criptografia de ponta a ponta os dados de sua empresa estarão sempre em segurança',
+    serverHeader: 'Backup em nuvem: Segurança avançada para seus Dados',
+    serverBody: `Nosso server Cloud dispõe de segurança
+    para sua aplicação e performance.
+    Com preços previsíveis e escalabilidade para
+    suportar seu crescimento em qualquer estágio.`,
   },
 };
 
