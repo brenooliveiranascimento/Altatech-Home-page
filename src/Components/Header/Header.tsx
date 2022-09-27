@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { FiSearch, FiShoppingCart, FiMenu } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import altaLogo from '../../images/Altatech_ALTA_icon.svg';
 
 function Header() {
   const [scroll, setScroll] = useState(0);
 
   const verifyScroll = () => setInterval(() => setScroll(window.scrollY), 100);
+  const isLoged = useSelector(({ userData }:any) => userData);
 
   const updateScroll = () => {
     verifyScroll();
@@ -52,11 +54,19 @@ function Header() {
               >
                 <FiMenu className="menu" />
               </button>
-              <Link to="/auth">
-                <button className="button_entrar" type="button">
-                  Entrar
-                </button>
-              </Link>
+              {
+                isLoged ? (
+                  <button className="button_entrar" type="button">
+                    Sair
+                  </button>
+                ) : (
+                  <Link to="/auth">
+                    <button className="button_entrar" type="button">
+                      Entrar
+                    </button>
+                  </Link>
+                )
+              }
             </section>
           </nav>
         </section>
