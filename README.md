@@ -43,6 +43,13 @@ O design está respansivo para diversos tamanhos de tela.
 
 ## [Link para acessar o projeto](https://altatech-home-page.vercel.app/)
 
+## Design respansivo!!
+<div>
+  <img src="https://user-images.githubusercontent.com/94801880/192587816-b913a5e8-d7e2-4a74-bf38-7623a717d980.png"/>
+<img src="https://user-images.githubusercontent.com/94801880/192587833-6f842f14-9843-4cd2-874d-6f76348adfe1.png"/>
+
+<div>
+
 Tecnologias utilizadas:<br/>
 <a href="https://www.javascript.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" width=30 height=30></a>
 <a href="https://www.javascript.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width=30 height=30></a>
