@@ -48,7 +48,7 @@ export default function CloudBeckup() {
                 className="edit_input"
                 value={editInf}
               />
-              <button onClick={saveEdit1} type="button">
+              <button className="btn_edit_inf" onClick={saveEdit1} type="button">
                 salvar
               </button>
             </section>
@@ -68,7 +68,17 @@ export default function CloudBeckup() {
                     className="edit_input"
                     value={editInf1}
                   />
-                  <button onClick={saveEdit} type="button">
+                  <button
+                    style={{
+                      width: 'auto',
+                      fontSize: '1.3rem',
+                      height: '2rem',
+                      backgroundColor: 'black',
+                    }}
+                    className="btn_edit_inf"
+                    onClick={saveEdit}
+                    type="button"
+                  >
                     salvar
                   </button>
                 </section>

@@ -21,7 +21,7 @@ function Hero() {
 
   useEffect(() => {
     setEditInf(heroInf);
-    setTimeout(() => setShowLogo(true), 500);
+    setTimeout(() => setShowLogo(true), 600);
   }, []);
 
   return (
@@ -39,13 +39,16 @@ function Hero() {
                   {editVerify ? (
                     <section>
                       <input
+                        style={{
+                          marginTop: '7rem',
+                        }}
                         onChange={({ target }: any) => {
                           setEditInf(target.value);
                         }}
                         className="edit_input"
                         value={editInf}
                       />
-                      <button onClick={saveEdit} type="button">
+                      <button className="btn_edit_inf" onClick={saveEdit} type="button">
                         salvar
                       </button>
                     </section>
