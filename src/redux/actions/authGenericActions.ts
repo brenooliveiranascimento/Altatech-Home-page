@@ -10,18 +10,6 @@ export const setUserDataSuccess = ({
   },
 });
 
-export const setUserDataInit: any = () => ({
-  type: 'SIGNIN_INIT',
-});
-
 export const setUserDataFail: any = () => ({
   type: 'SIGNIN_FAIL',
-});
-
-export const logoutUser: any = () => ({
-  type: 'LOGOUT',
-});
-
-export const signinVisitant: any = () => ({
-  type: 'ISVISITANT',
 });

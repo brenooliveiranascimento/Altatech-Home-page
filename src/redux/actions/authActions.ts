@@ -2,7 +2,7 @@ import { Dispatch } from 'react';
 import { getUserInDataBase, registerUser, signInUser } from '../../services/AuthControl/AuthControl';
 
 import {
-  setUserDataFail, setUserDataInit, setUserDataSuccess,
+  setUserDataFail, setUserDataSuccess,
 } from './authGenericActions';
 
 const createAccountAndData = async (userInf: any, dispatch: any) => {
@@ -44,7 +44,6 @@ export const createUserCount = ({
 
 export const signIn = ({ email, password }: any): any => {
   return async function (dispatch: Dispatch<any>) {
-    dispatch(setUserDataInit());
     try { signInWithEmailAndPassword(email, password, dispatch); } catch (error: any) {
       signInFail(error.message, dispatch);
     }
