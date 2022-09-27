@@ -45,7 +45,7 @@ export function interfaceData(state = interfaceInitialState, action: actionType)
     case 'FETCH_DATA':
       return { ...state, data: action.payload.interfaceData };
     case 'UPDATE_DATA':
-      return { ...state, data: action.payload.interfaceData };
+      return { ...state, data: action.payload };
     case 'UPDATE_PARCEIROS':
       return { ...state, parceiros: action.parceiros };
     case 'HANDLE_EDIT':
