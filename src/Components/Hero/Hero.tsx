@@ -32,7 +32,7 @@ function Hero() {
               showLogo ? (
                 <section style={{
                   width: 'auto',
-                  height: '25rem',
+                  height: '10rem',
                 }}
                 >
                   {editVerify ? (

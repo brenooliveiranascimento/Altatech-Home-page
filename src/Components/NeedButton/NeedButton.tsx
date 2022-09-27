@@ -60,7 +60,6 @@ function NeedButton() {
         }}
         className="need_body"
       >
-        <input className="search_service" />
         {
           services.map((service: {name: string}) => (
             <ServicesCard service={service} key={service.name} />
