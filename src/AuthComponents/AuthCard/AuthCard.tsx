@@ -62,9 +62,12 @@ function AuthCard() {
 
   return (
     <section className="auth_card_container">
-      <h1>Logar</h1>
+      <h1>
+        { isRegister ? 'Registrar conta' : 'Entrar' }
+      </h1>
       { isRegister && (
       <input
+        placeholder="name"
         onChange={handleUserData}
         value={userData.name}
         name="name"
@@ -72,11 +75,13 @@ function AuthCard() {
       )}
       <input
         onChange={handleUserData}
+        placeholder="email"
         value={userData.email}
         name="email"
       />
       <input
         onChange={handleUserData}
+        placeholder="password"
         value={userData.password}
         name="password"
       />
@@ -98,6 +103,9 @@ function AuthCard() {
       </button>
       {isRegister && (
       <button
+        style={{
+          backgroundColor: userData.adm ? '#122048' : '#213b89',
+        }}
         onClick={() => setUserData({ ...userData, adm: !userData.adm })}
         type="button"
       >

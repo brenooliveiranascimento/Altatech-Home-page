@@ -14,4 +14,28 @@
 
 .auth_card_container input {
   width: 70%;
+  height: 1.4rem;
+  margin: 0.5rem;
+}
+
+.auth_card_container h1 {
+  font-size: 2rem;
+}
+
+.auth_card_container button {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #213b89;
+  color: white;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1120px) {
+  .auth_card_container {
+    width: 80%;
+  }
 }
