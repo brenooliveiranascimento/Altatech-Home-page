@@ -26,6 +26,7 @@ Note que os Textos são substituidos por um input e um botão para salvar as alt
 - email: altatech@altatech.com
 
 - senha: 123123
+- Fiquem a vontade para criar novas contas
 
 Para o sistema de autenticação e banco de dados utilizei o firebase.
 O design está respansivo para diversos tamanhos de tela.
