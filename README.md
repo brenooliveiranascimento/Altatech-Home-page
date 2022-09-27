@@ -36,7 +36,7 @@ O design está respansivo para diversos tamanhos de tela.
 - Clone o repositório com a url "git clone git@github.com:brenooliveiranascimento/Altatech-Home-page.git"
 - Navegue até o diretorio criado com o comando "cd Altatech-Home-page/"
 - Execute o comando "npm i" ou se preferir utilizar o yarn com "yarn"
-- Caso tenha problemas no passo anterior execute o comando "npm i --force" caso contrario apenas continue com os próximos passos
+- Caso tenha problemas no passo anterior execute o comando "npm i -force" caso contrario apenas continue com os próximos passos
 - Execute o comando para rodat o projeto localmente "npm start"
 - Por padrão o projeto estará rodando na porta 3000 então acesse a url "http://localhost:3000/" dentro do seu navegador
 
