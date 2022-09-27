@@ -5,11 +5,8 @@ const interfaceInitialState = {
     beckupBody: 'Uma solução de segurança avançada e econômica para seus dados',
     beckup1Header2: 'Backup em nuvem: Segurança avançada para seus Dados',
     beckupBody2: 'com a Criptografia de ponta a ponta os dados de sua empresa estarão sempre em segurança',
-    serverHeader: 'Backup em nuvem: Segurança avançada para seus Dados',
-    serverBody: `Nosso server Cloud dispõe de segurança
-    para sua aplicação e performance.
-    Com preços previsíveis e escalabilidade para
-    suportar seu crescimento em qualquer estágio.`,
+    serverHeader: 'Server VPS: Tenha seu servidor virtual',
+    serverBody: 'Nossos Server Cloud dispõe de escalabilidade, segurança para sua aplicação e performance. ',
   },
   parceiros: [
     { name: 'Parceiro 1', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/56becc0545f9ec0e851870db7cda1ec5.png', url: '' },
@@ -24,6 +21,7 @@ const interfaceInitialState = {
     { name: 'Parceiro 8', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/18e00fa21512a3aac30d569415f9e550.png', url: '' },
     { name: 'Parceiro 10', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/9b22c203326020227017829bd1311d2d.png', url: '' },
   ],
+  isEdit: false,
 };
 
 interface actionType {
@@ -44,9 +42,11 @@ export function interfaceData(state = interfaceInitialState, action: actionType)
     case 'FETCH_DATA':
       return { ...state, data: action.payload.interfaceData };
     case 'UPDATE_DATA':
-      return { ...state, data: action.payload.interfaceData };
+      return { ...state, data: action.payload };
     case 'UPDATE_PARCEIROS':
       return { ...state, parceiros: action.parceiros };
+    case 'HANDLE_EDIT':
+      return { ...state, isEdit: !state.isEdit };
     default:
       return state;
   }

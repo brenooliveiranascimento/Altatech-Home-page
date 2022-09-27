@@ -1,3 +1,31 @@
 button {
   border: none;
 }
+
+.edit_input {
+  border: none;
+  width: 20rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.btn_edit_inf {
+  background-color: black;
+  height: 2rem;
+  padding: 10px;
+  font-size: 1.3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 416px) {
+  .edit_input {
+    width: 90%;
+  }
+}

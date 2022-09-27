@@ -1,0 +1,17 @@
+.edit_button_container {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: #3A3CBE;
+  color: white;
+  border-radius: 100%;
+  width: 5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  height: 5rem;
+  z-index: 99;
+}
+
+.edit_button_container:hover {
+  background-color: #24257b;
+}
