@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { emailVerification, passwordVerification } from '../../services/emailPasswordVerification';
 import './AuthCard.css';
 
 function AuthCard() {
@@ -9,6 +10,7 @@ function AuthCard() {
     password: '',
     adm: false,
   });
+  const [infCheck, setInfCheck] = useState(false);
 
   const handleUserData = ({ target }: any) => {
     const { name, value } = target;
@@ -17,6 +19,18 @@ function AuthCard() {
       [name]: value,
     });
   };
+
+  const checkEmailAndPAssword = () => {
+    if (emailVerification(userData.email) && passwordVerification(userData.password)) {
+      setInfCheck(true);
+      return;
+    }
+    setInfCheck(false);
+  };
+
+  useState(() => {
+    checkEmailAndPAssword();
+  }, [userData]);
 
   return (
     <section className="auth_card_container">
