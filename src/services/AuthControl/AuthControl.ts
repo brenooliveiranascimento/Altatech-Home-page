@@ -45,3 +45,7 @@ export const registerUser = async (email: string, password: string, name: string
     console.log(error.message);
   }
 };
+
+export const sigout = () => {
+  firebase.auth().signOut();
+};

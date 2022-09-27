@@ -13,3 +13,7 @@ export const setUserDataSuccess = ({
 export const setUserDataFail: any = () => ({
   type: 'SIGNIN_FAIL',
 });
+
+export const resetUserInf: any = () => ({
+  type: 'SIGOUT_USER',
+});

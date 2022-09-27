@@ -13,7 +13,16 @@ export function userData(state = userInitialState, action:any) {
     case 'SIGNIN_SUCCESS':
       return { ...state, loged: true, user: action.payLoad };
     case 'SIGOUT_USER':
-      return { ...state, loged: false, user: userInitialState };
+      return {
+        ...state,
+        loged: false,
+        user: {
+          name: '',
+          email: '',
+          amd: false,
+          uid: '',
+        },
+      };
     default:
       return state;
   }
