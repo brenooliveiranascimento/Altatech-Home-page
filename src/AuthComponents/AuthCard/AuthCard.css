@@ -1,0 +1,17 @@
+.auth_card_container {
+  display: flex;
+  width: 720px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5rem;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px grey;
+  flex-direction: column;
+  z-index: 11;
+  height: auto;
+  padding: 2rem;
+}
+
+.auth_card_container input {
+  width: 70%;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import AuthCard from '../../AuthComponents/AuthCard/AuthCard';
 import './Auth.css';
 
 function Auth() {
@@ -7,6 +8,7 @@ function Auth() {
       <section className="auth_Background">
         <section className="auth_brightness" />
       </section>
+      <AuthCard />
     </section>
   );
 }
