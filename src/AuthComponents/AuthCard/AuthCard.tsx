@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { createUserCount, signIn } from '../../redux/actions/authActions';
 import { emailVerification, passwordVerification } from '../../services/emailPasswordVerification';
 import './AuthCard.css';
 
 function AuthCard() {
+  const dispatch = useDispatch();
   const [isRegister, setIsRegister] = useState(false);
   const [userData, setUserData] = useState({
     name: '',
@@ -20,14 +23,23 @@ function AuthCard() {
     });
   };
 
+  const siginUser = () => {
+    dispatch(signIn({ ...userData }));
+  };
+
+  const register = () => {
+    dispatch(createUserCount({ ...userData }));
+  };
+
+  const checkEmailAndPAssword = () => {
+    if (emailVerification(userData.email) && passwordVerification(userData.password)) {
+      setInfCheck(true);
+      return;
+    }
+    setInfCheck(false);
+  };
+
   useEffect(() => {
-    const checkEmailAndPAssword = () => {
-      if (emailVerification(userData.email) && passwordVerification(userData.password)) {
-        setInfCheck(true);
-        return;
-      }
-      setInfCheck(false);
-    };
     checkEmailAndPAssword();
   }, [userData]);
 
@@ -51,7 +63,13 @@ function AuthCard() {
         value={userData.password}
         name="password"
       />
-      <button type="button">
+      <button
+        onClick={() => {
+          if (isRegister) return register();
+          siginUser();
+        }}
+        type="button"
+      >
         { isRegister ? 'Registrar' : 'entrar' }
       </button>
       <button
