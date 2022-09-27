@@ -11,6 +11,7 @@
   border-top-right-radius: 16px;
   transition: all 0.4s;
   flex-direction: column;
+  z-index: 99;
   cursor: pointer;
 }
 

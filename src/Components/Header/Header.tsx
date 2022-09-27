@@ -2,15 +2,22 @@ import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { FiSearch, FiShoppingCart, FiMenu } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 import altaLogo from '../../images/Altatech_ALTA_icon.svg';
+import { sigoutUser } from '../../redux/actions/authActions';
 
 function Header() {
   const [scroll, setScroll] = useState(0);
-
+  const dispatch = useDispatch();
   const verifyScroll = () => setInterval(() => setScroll(window.scrollY), 100);
+  const isLoged = useSelector(({ userData }:any) => userData.loged);
 
   const updateScroll = () => {
     verifyScroll();
+  };
+
+  const sigout = () => {
+    dispatch(sigoutUser());
   };
 
   useEffect(() => {
@@ -52,11 +59,23 @@ function Header() {
               >
                 <FiMenu className="menu" />
               </button>
-              <Link to="/auth">
-                <button className="button_entrar" type="button">
-                  Entrar
-                </button>
-              </Link>
+              {
+                isLoged ? (
+                  <button
+                    onClick={sigout}
+                    className="button_entrar"
+                    type="button"
+                  >
+                    Sair
+                  </button>
+                ) : (
+                  <Link to="/auth">
+                    <button className="button_entrar" type="button">
+                      Entrar
+                    </button>
+                  </Link>
+                )
+              }
             </section>
           </nav>
         </section>

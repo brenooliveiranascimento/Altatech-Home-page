@@ -1,7 +1,10 @@
 import { Dispatch } from 'react';
-import { getUserInDataBase, registerUser, signInUser } from '../../services/AuthControl/AuthControl';
+import {
+  getUserInDataBase, registerUser, signInUser, sigout,
+} from '../../services/AuthControl/AuthControl';
 
 import {
+  resetUserInf,
   setUserDataFail, setUserDataSuccess,
 } from './authGenericActions';
 
@@ -58,5 +61,12 @@ export const signedUser = (uid: string): any => {
     } catch (error: any) {
       console.log(error.message);
     }
+  };
+};
+
+export const sigoutUser = (): any => {
+  return async (dispatch: Dispatch<any>) => {
+    await sigout();
+    dispatch(resetUserInf());
   };
 };
