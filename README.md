@@ -4,7 +4,7 @@
 Repaginação da página home do site https://altatech.com.br/
 
 # [Link para acessar o projeto](https://altatech-home-page.vercel.app/)
-# [Video de apresentação do projeto](https://youtu.be/cNHyJ21mTqI)
+# [Vídeo de apresentação do projeto](https://youtu.be/cNHyJ21mTqI)
 
 
 Alguns textos principais da página estão sendo consumidos de um banco de dados, e o seu estado global
