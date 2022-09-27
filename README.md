@@ -26,6 +26,7 @@ Note que os Textos são substituidos por um input e um botão para salvar as alt
 - email: altatech@altatech.com
 
 - senha: 123123
+- Para autenticar basta oresionar o botão "Entrar no Header" e inserir as credenciais
 - Fiquem a vontade para criar novas contas
 
 Para o sistema de autenticação e banco de dados utilizei o firebase.
