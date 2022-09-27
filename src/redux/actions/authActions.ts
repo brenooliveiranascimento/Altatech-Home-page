@@ -10,7 +10,6 @@ const createAccountAndData = async (userInf: any, dispatch: any) => {
     email, password, name, adm,
   } = userInf;
 
-  dispatch(setUserDataInit());
   const fetchUserData:any = await registerUser(email, password, name, adm);
   const userData = await {
     name, password, email, uid: fetchUserData.uid,
