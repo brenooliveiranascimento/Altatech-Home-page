@@ -4,6 +4,7 @@
 Repaginação da página home do site https://altatech.com.br/
 
 # [Link para acessar o projeto](https://altatech-home-page.vercel.app/)
+# [Video de apresentação do projeto](https://youtu.be/cNHyJ21mTqI)
 
 
 Alguns textos principais da página estão sendo consumidos de um banco de dados, e o seu estado global
@@ -33,7 +34,7 @@ Para o sistema de autenticação e banco de dados utilizei o firebase.
 O design está respansivo para diversos tamanhos de tela.
 
 ## Para rodar o projeto em sua máquina (Tire as "" dos comandos)
-- Clone o repositório com a url "git clone git@github.com:brenooliveiranascimento/Altatech-Home-page.git"
+- Clone o repositório com o comando "git clone git@github.com:brenooliveiranascimento/Altatech-Home-page.git"
 - Navegue até o diretorio criado com o comando "cd Altatech-Home-page/"
 - Execute o comando "npm i" ou se preferir utilizar o yarn com "yarn"
 - Caso tenha problemas no passo anterior execute o comando "npm i -force" caso contrario apenas continue com os próximos passos
