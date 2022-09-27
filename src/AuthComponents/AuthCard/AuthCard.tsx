@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { createUserCount, signIn } from '../../redux/actions/authActions';
 import { emailVerification, passwordVerification } from '../../services/emailPasswordVerification';
 import './AuthCard.css';
+import altaLogo from '../../images/Altatech_ALTA.svg';
 
 function AuthCard() {
   const userStore = useSelector(({ userData }: any) => userData);
@@ -48,11 +49,19 @@ function AuthCard() {
   if (userStore.loged) {
     return (
       <section className="auth_card_container">
+        <img
+          style={{
+            width: 100,
+          }}
+          src={altaLogo}
+          alt="altatech logo"
+        />
         <h1>
           Seja bem vindo
           {' '}
           {userStore.user.name}
         </h1>
+
         <Link to="/">
           Voltar a Home
         </Link>
@@ -62,9 +71,14 @@ function AuthCard() {
 
   return (
     <section className="auth_card_container">
-      <h1>
-        { isRegister ? 'Registrar conta' : 'Entrar' }
-      </h1>
+      <img
+        style={{
+          width: 300,
+          margin: '1rem',
+        }}
+        src={altaLogo}
+        alt="altatech logo"
+      />
       { isRegister && (
       <input
         placeholder="name"
