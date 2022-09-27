@@ -1,5 +1,8 @@
 # Altatech soluçẽs em tecnologia
 
+## sobre o projeto
+Página home do site https://altatech.com.br/
+
 Tecnologias utilizadas:<br/>
 <a href="https://www.javascript.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" width=30 height=30></a>
 <a href="https://www.javascript.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width=30 height=30></a>
