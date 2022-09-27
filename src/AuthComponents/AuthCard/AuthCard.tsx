@@ -35,10 +35,10 @@ function AuthCard() {
 
   const checkEmailAndPAssword = () => {
     if (emailVerification(userData.email) && passwordVerification(userData.password)) {
-      setInfCheck(true);
+      setInfCheck(false);
       return;
     }
-    setInfCheck(false);
+    setInfCheck(true);
   };
 
   useEffect(() => {
@@ -81,6 +81,7 @@ function AuthCard() {
         name="password"
       />
       <button
+        disabled={infCheck}
         onClick={() => {
           if (isRegister) return register();
           siginUser();

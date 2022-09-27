@@ -10,7 +10,6 @@ import './Hero.css';
 function Hero() {
   const heroInf = useSelector(({ interfaceData }: any) => interfaceData.data.hero);
   const isLoged = useSelector(({ userData }: any) => userData);
-  const [isEdit, setIsEdit] = useState(false);
 
   return (
     <section className="hero_container">

@@ -16,3 +16,7 @@ export const requestIterfaceInDatabase = (): any => {
     }
   };
 };
+
+export const isEdit = () => ({
+  type: 'HANDLE_EDIT',
+});
