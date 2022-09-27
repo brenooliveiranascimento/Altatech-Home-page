@@ -23,3 +23,9 @@ button {
   justify-content: center;
   cursor: pointer;
 }
+
+@media screen and (max-width: 416px) {
+  .edit_input {
+    width: 90%;
+  }
+}
