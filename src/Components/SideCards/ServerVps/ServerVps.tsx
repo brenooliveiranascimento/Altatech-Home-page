@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux';
 import beckup2 from '../../../lottie/cloud.json';
 
 function ServerVps() {
-  const serverHeader = useSelector(({ interfaceData }: any) => interfaceData.data.beckup1Header2);
-  const serverBody = useSelector(({ interfaceData }: any) => interfaceData.data.beckupBody2);
+  const serverHeader = useSelector(({ interfaceData }: any) => interfaceData.data.serverHeader);
+  const serverBody = useSelector(({ interfaceData }: any) => interfaceData.data.serverBody);
 
   const defaultOptionsLoading: any = {
     loop: true,
@@ -34,10 +34,7 @@ function ServerVps() {
           </section>
           <section className="server_vps_dark_side">
             <span>
-              Nosso server Cloud dispõe de segurança
-              para sua aplicação e performance.
-              Com preços previsíveis e escalabilidade para
-              suportar seu crescimento em qualquer estágio.
+              {serverBody}
             </span>
             <button
               type="button"

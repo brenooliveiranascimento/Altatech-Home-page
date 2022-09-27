@@ -5,11 +5,8 @@ const interfaceInitialState = {
     beckupBody: 'Uma solução de segurança avançada e econômica para seus dados',
     beckup1Header2: 'Backup em nuvem: Segurança avançada para seus Dados',
     beckupBody2: 'com a Criptografia de ponta a ponta os dados de sua empresa estarão sempre em segurança',
-    serverHeader: 'Backup em nuvem: Segurança avançada para seus Dados',
-    serverBody: `Nosso server Cloud dispõe de segurança
-    para sua aplicação e performance.
-    Com preços previsíveis e escalabilidade para
-    suportar seu crescimento em qualquer estágio.`,
+    serverHeader: 'Server VPS: Tenha seu servidor virtual',
+    serverBody: 'Nossos Server Cloud dispõe de escalabilidade, segurança para sua aplicação e performance. ',
   },
   parceiros: [
     { name: 'Parceiro 1', image: 'https://altatech.com.br/thumb/parceiro/3/130/100/56becc0545f9ec0e851870db7cda1ec5.png', url: '' },

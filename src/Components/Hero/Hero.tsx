@@ -12,8 +12,8 @@ function Hero() {
   const dispatch = useDispatch();
   const [editInf, setEditInf] = useState('');
   const heroInf = useSelector(({ interfaceData }: any) => interfaceData.data.hero);
-  const isLoged = useSelector(({ userData }: any) => userData);
   const editVerify = useSelector(({ interfaceData }: any) => interfaceData.isEdit);
+  const [showLogo, setShowLogo] = useState(false);
 
   const saveEdit = () => {
     dispatch(updateInterface(editInf, 'hero'));
@@ -21,6 +21,7 @@ function Hero() {
 
   useEffect(() => {
     setEditInf(heroInf);
+    setTimeout(() => setShowLogo(true), 500);
   }, []);
 
   return (
@@ -28,29 +29,41 @@ function Hero() {
       <section className="hero_brightness">
         <section className="hero_inf">
           <article className="left_hero_centent">
-            {editVerify ? (
-              <section>
-                <input
-                  onChange={({ target }: any) => {
-                    setEditInf(target.value);
-                  }}
-                  className="edit_input"
-                  value={editInf}
-                />
-                <button onClick={saveEdit} type="button">
-                  salvar
-                </button>
-              </section>
-            ) : (
-              <TypeAnimation
-                sequence={[`${heroInf}`, 1300]}
-                wrapper="h1"
-                className="hero_message"
-                speed={5}
-              />
-            ) }
+            {
+              showLogo && (
+                <section style={{
+                  width: 'auto',
+                  height: '25rem',
+                }}
+                >
+                  {editVerify ? (
+                    <section>
+                      <input
+                        onChange={({ target }: any) => {
+                          setEditInf(target.value);
+                        }}
+                        className="edit_input"
+                        value={editInf}
+                      />
+                      <button onClick={saveEdit} type="button">
+                        salvar
+                      </button>
+                    </section>
+                  ) : (
+                    <section>
+                      <TypeAnimation
+                        sequence={[`${heroInf}`, 1300]}
+                        wrapper="h1"
+                        className="hero_message"
+                        speed={5}
+                      />
+                      <span>Sobre nos</span>
+                    </section>
+                  ) }
+                </section>
+              )
+            }
 
-            <span>Sobre nos</span>
           </article>
           <HeroFooter />
         </section>

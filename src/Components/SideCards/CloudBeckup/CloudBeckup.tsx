@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ServicesInf.css';
 import Lottie from 'react-lottie';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import beckup2 from '../../../lottie/beckup2.json';
+import { updateInterface } from '../../../redux/actions/interfaceActions';
 
 export default function CloudBeckup() {
   const beckupHeader = useSelector(({ interfaceData }: any) => interfaceData.data.beckup1Header2);
   const beckupBody = useSelector(({ interfaceData }: any) => interfaceData.data.beckupBody2);
+  const dispatch = useDispatch();
+  const [editInf, setEditInf] = useState('');
+  const [editInf1, setEditInf1] = useState('');
+  const beckup1Header = useSelector(({ interfaceData }: any) => interfaceData.data.beckup1Header2);
+  const editVerify = useSelector(({ interfaceData }: any) => interfaceData.isEdit);
+
+  const saveEdit = () => {
+    dispatch(updateInterface(editInf1, 'beckupBody2'));
+  };
+
+  const saveEdit1 = () => {
+    dispatch(updateInterface(editInf, 'beckup1Header2'));
+  };
+
+  useEffect(() => {
+    setEditInf(beckup1Header);
+    setEditInf1(beckupBody);
+  }, []);
 
   const defaultOptionsLoading: any = {
     loop: true,
@@ -19,13 +38,47 @@ export default function CloudBeckup() {
   return (
     <section className="beckups_area">
       <section className="beckups_brightness">
-        <span>Backup em nuvem: Segurança avançada para seus Dados</span>
+        {
+          editVerify ? (
+            <section>
+              <input
+                onChange={({ target }: any) => {
+                  setEditInf(target.value);
+                }}
+                className="edit_input"
+                value={editInf}
+              />
+              <button onClick={saveEdit1} type="button">
+                salvar
+              </button>
+            </section>
+          ) : (
+            <span>{beckup1Header}</span>
+          )
+        }
         <section className="inf_area">
           <section className="ing_content">
-            <p>
-              com a Criptografia de ponta a ponta os dados de sua
-              empresa estarão sempre em segurança
-            </p>
+            {
+              editVerify ? (
+                <section>
+                  <input
+                    onChange={({ target }: any) => {
+                      setEditInf1(target.value);
+                    }}
+                    className="edit_input"
+                    value={editInf1}
+                  />
+                  <button onClick={saveEdit} type="button">
+                    salvar
+                  </button>
+                </section>
+              ) : (
+                <p>
+                  {beckupBody}
+                </p>
+              )
+            }
+
             <button
               className="button_confere"
               type="button"
