@@ -2,6 +2,10 @@ import { Dispatch } from 'react';
 import { updateInterfaceDatabase } from '../../services/interfaceDatabaseControl/interfaceDatabaseControl';
 import { requestInterfaceData } from '../../services/requestData/reuqestData';
 
+export const isEdit = () => ({
+  type: 'HANDLE_EDIT',
+});
+
 const updateInterfaceData = (data: any, type: string) => ({
   type,
   payload: data,
@@ -29,9 +33,7 @@ export const updateInterface = (data: string, name:string): any => {
     items[name] = data;
     updateInterfaceDatabase(items);
     dispatch(updateData(items));
+    dispatch(isEdit());
+    alert(`${name} solvo com sucesso!`);
   };
 };
-
-export const isEdit = () => ({
-  type: 'HANDLE_EDIT',
-});

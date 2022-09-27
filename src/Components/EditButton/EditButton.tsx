@@ -11,7 +11,7 @@ function EditButton() {
   };
   return (
     <button onClick={startEdit} className="edit_button_container" type="button">
-      <h1>{editVerify ? 'salver' : 'editar'}</h1>
+      <h1>{editVerify ? 'Cancel' : 'editar'}</h1>
     </button>
   );
 }

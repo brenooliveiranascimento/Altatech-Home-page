@@ -28,16 +28,15 @@ function Hero() {
     <section className="hero_container">
       <section className="hero_brightness">
         <section className="hero_inf">
-          <article className="left_hero_centent">
-            {
-              showLogo && (
+          {
+              showLogo ? (
                 <section style={{
                   width: 'auto',
                   height: '25rem',
                 }}
                 >
                   {editVerify ? (
-                    <section>
+                    <section className="left_hero_centent">
                       <input
                         style={{
                           marginTop: '7rem',
@@ -48,12 +47,19 @@ function Hero() {
                         className="edit_input"
                         value={editInf}
                       />
-                      <button className="btn_edit_inf" onClick={saveEdit} type="button">
+                      <button
+                        style={{
+                          width: '5rem',
+                        }}
+                        className="btn_edit_inf"
+                        onClick={saveEdit}
+                        type="button"
+                      >
                         salvar
                       </button>
                     </section>
                   ) : (
-                    <section>
+                    <section className="left_hero_centent">
                       <TypeAnimation
                         sequence={[`${heroInf}`, 1300]}
                         wrapper="h1"
@@ -64,10 +70,11 @@ function Hero() {
                     </section>
                   ) }
                 </section>
+              ) : (
+                <section className="left_hero_centent" />
               )
             }
 
-          </article>
           <HeroFooter />
         </section>
       </section>
