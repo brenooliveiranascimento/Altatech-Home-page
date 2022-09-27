@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { useSelector } from 'react-redux';
 import { TypeAnimation } from 'react-type-animation';
@@ -8,14 +8,23 @@ import NeedButton from '../NeedButton/NeedButton';
 import './Hero.css';
 
 function Hero() {
+  const [editInf, setEditInf] = useState('');
   const heroInf = useSelector(({ interfaceData }: any) => interfaceData.data.hero);
   const isLoged = useSelector(({ userData }: any) => userData);
+  const editVerify = useSelector(({ interfaceData }: any) => interfaceData.isEdit);
+
+  useEffect(() => {
+    setEditInf(heroInf);
+  }, []);
 
   return (
     <section className="hero_container">
       <section className="hero_brightness">
         <section className="hero_inf">
           <article className="left_hero_centent">
+            {editVerify && (
+              <input className="edit_input" value={editInf} />
+            ) }
             <TypeAnimation
               sequence={[`${heroInf}`, 1300]}
               wrapper="h1"
