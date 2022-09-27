@@ -96,6 +96,7 @@ function AuthCard() {
       <input
         onChange={handleUserData}
         placeholder="password"
+        type="password"
         value={userData.password}
         name="password"
       />

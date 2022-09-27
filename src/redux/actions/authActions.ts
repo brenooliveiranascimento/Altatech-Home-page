@@ -65,7 +65,6 @@ export const signedUser = (uid: string): any => {
 };
 
 export const sigoutUser = (): any => {
-  alert('dwadwp');
   return async (dispatch: Dispatch<any>) => {
     await sigout();
     dispatch(resetUserInf());
