@@ -1,14 +1,12 @@
-export const setExerciceProgress = ({ progress }: any): any => ({
-  type: 'FETCH_PROGRESS',
-  payLoad: progress,
-});
-
-export const setUserDataSuccess = ({ name, email, uid }: any): any => ({
+export const setUserDataSuccess = ({
+  name, email, uid, adm,
+}: any): any => ({
   type: 'SIGNIN_SUCCESS',
   payLoad: {
     name,
     email,
     uid,
+    adm,
   },
 });
 

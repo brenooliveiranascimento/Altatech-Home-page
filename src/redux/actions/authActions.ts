@@ -2,7 +2,7 @@ import { Dispatch } from 'react';
 import { getUserInDataBase, registerUser, signInUser } from '../../services/AuthControl/AuthControl';
 
 import {
-  setExerciceProgress, setUserDataFail, setUserDataInit, setUserDataSuccess,
+  setUserDataFail, setUserDataInit, setUserDataSuccess,
 } from './authGenericActions';
 
 const createAccountAndData = async (userInf: any, dispatch: any) => {
@@ -15,14 +15,12 @@ const createAccountAndData = async (userInf: any, dispatch: any) => {
   const userData = await {
     name, password, email, uid: fetchUserData.uid,
   };
-  await dispatch(setExerciceProgress(fetchUserData));
   await dispatch(setUserDataSuccess(userData));
 };
 
 const signInWithEmailAndPassword = async (email: string, password: string, dispatch: any) => {
   const fetchUserData: any = await signInUser(email, password);
   dispatch(setUserDataSuccess(await fetchUserData));
-  dispatch(setExerciceProgress(fetchUserData));
 };
 
 const signInFail = (errorMessage: string, dispatch: any) => {
@@ -59,7 +57,6 @@ export const signedUser = (uid: string): any => {
     try {
       const userData: any = await getUserInDataBase(uid);
       dispatch(setUserDataSuccess(await userData.data()));
-      dispatch(setExerciceProgress(await userData.data()));
     } catch (error: any) {
       console.log(error.message);
     }
