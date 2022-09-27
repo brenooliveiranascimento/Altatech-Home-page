@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { emailVerification, passwordVerification } from '../../services/emailPasswordVerification';
 import './AuthCard.css';
 
@@ -20,15 +20,14 @@ function AuthCard() {
     });
   };
 
-  const checkEmailAndPAssword = () => {
-    if (emailVerification(userData.email) && passwordVerification(userData.password)) {
-      setInfCheck(true);
-      return;
-    }
-    setInfCheck(false);
-  };
-
-  useState(() => {
+  useEffect(() => {
+    const checkEmailAndPAssword = () => {
+      if (emailVerification(userData.email) && passwordVerification(userData.password)) {
+        setInfCheck(true);
+        return;
+      }
+      setInfCheck(false);
+    };
     checkEmailAndPAssword();
   }, [userData]);
 
